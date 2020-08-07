@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=css/bootstrap.css>
+    <link rel="stylesheet" href=css/style.css>
+    <header class="header"> 
+        <h1 class="text-left "> cleanPig.ng</h1> 
+        <a class="btn" href=#>Clean Up</a>
+        <a class="btn" href="#">Feedback</a>
+        <a class="btn" href="#">Enquiry</a>
+    </header>
+</head>
+    <body> 
+        
+            <form class=" container cleanUpform" id="cleanUpform" >
+                <div class="form-group">
+                        <label>Clean Up Now </label>
+                        <div class="row">
+                        <br/>   
+                        <div class="col-sm">
+                        <label>Regular Wear</label>
+                        <select class="regularWear form-control" placeholder="select one">
+                            <option value="">select one</option>
+                            <option >shirt</option>
+                            <option>trousers</option>
+                            <option>jeans</option>
+                            <option>jacket</option>
+                            <option>T-Shirt</option>
+                            <option>roundneck</option>
+                            <option>short</option>
+                            <option>shirt</option>
+                        </select>
+                        <input  class="form-control" type="number" name="regularQuantity" placeholder="quantity" value=""> </input>
+                        <button class="regBtn btn-primary" type="submit" name="addRegular"> + </button>
+                    </div>
+                
+                        
+                    <br/>
+                    <div class="col-sm">
+                    <label>Traditional Wear </label>
+                        <select class="traditionalWear form-control" placeholder="select one">
+                            <option value="">select one</option>
+                            <option>Male- Buba & sokoto</option>
+                            <option>Male- only Buba</option>
+                            <option>Male- Agbada(complete)</option>
+                            <option>Male- only Agbada</option>
+                            <option>Male- Danshiki </option>
+                            <option>Female- Iro and Buba</option>
+                            <option>Female- Gown</option>
+                            <option>Female- Up and Down</option>
+                        </select>
+                        <input class="traditionalQuantity form-control" type="number" name="regularTraditional" placeholder="quantity"> </input>
+                        <button class="btn-primary" type="submit" name="addTraditional"> + </button>
+                    </div>
+                        <br/>
+                        <div class="col-sm">                       
+                             <label> Undergarment </label>
+                        <select class="undergarment form-control" >
+                            <option value="">select one</option>
+                            <option>men- Boxers</option>
+                            <option>Female- </option>
+                        </select>
+                        <input class="undergarmentQuantity form-control" type="number" name="regularUndergarment" placeholder="quantity"> </input>
+                        <button class="btn-primary" type="submit" name="addundergarment"> + </button>
+                    </div>
+                        </div>
+                        <br/>
+                    <label >Total wear </label>
+                    <input class="totalWear form-control" name="totalWears" value=0 ></input>
+                    <label>Bill</label>
+                    <input class="form-control" name="bill"></input>
+                
+                    </div>
+            </form>
+
+        </body>
+ <script scc="JS/bootstrap.js"></script>
+    <script src="JS/calc.js" > </script>
+ </html>
