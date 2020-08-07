@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href=css/bootstrap.css>
-    <link rel="stylesheet" href=css/style.css>
-    <header class="header"> 
-        <h1 class="text-left "> cleanPig.ng</h1> 
-        <a class="btn" href=#>Clean Up</a>
-        <a class="btn" href="#">Feedback</a>
-        <a class="btn" href="#">Enquiry</a>
+    
+    <div class="table">
+    <header class="header">
+        <div class="row navbar">
+        <h1 class="col-sm-6 "> cleanPig.ng</h1> 
+        <a class="btn col-sm-2 " href=#>Clean Up</a>
+        <a class="btn col-sm-2" href="#">Feedback</a>
+        <a class="btn col-sm-2" href="#">Enquiry</a>
+        </div>
     </header>
+</div>
 </head>
     <body> 
         
-            <form class=" container cleanUpform" id="cleanUpform" >
-                <div class="form-group">
-                        <label>Clean Up Now </label>
-                        <div class="row">
-                        <br/>   
-                        <div class="col-sm">
+            <form class="myform" >
+                <h3 class="heading"> Clean Up Now  </h3>
+                <div class=" form-group">
+                        
+                        <div class="row">   
+                        <div class="col-sm-9">
+                            <div class="row">
+                        <div class="col-md-5">
                         <label>Regular Wear</label>
                         <select class="regularWear form-control" placeholder="select one">
                             <option value="">select one</option>
@@ -37,9 +45,9 @@
                         <button class="regBtn btn-primary" type="submit" name="addRegular"> + </button>
                     </div>
                 
-                        
+                     
                     <br/>
-                    <div class="col-sm">
+                    <div class="col-md-5">
                     <label>Traditional Wear </label>
                         <select class="traditionalWear form-control" placeholder="select one">
                             <option value="">select one</option>
@@ -56,7 +64,7 @@
                         <button class="btn-primary" type="submit" name="addTraditional"> + </button>
                     </div>
                         <br/>
-                        <div class="col-sm">                       
+                        <div class="col-md-5">                       
                              <label> Undergarment </label>
                         <select class="undergarment form-control" >
                             <option value="">select one</option>
@@ -67,12 +75,14 @@
                         <button class="btn-primary" type="submit" name="addundergarment"> + </button>
                     </div>
                         </div>
-                        <br/>
+                    </div>
+                    
+                         <div class="col-sm-2">
                     <label >Total wear </label>
                     <input class="totalWear form-control" name="totalWears" value=0 ></input>
                     <label>Bill</label>
                     <input class="form-control" name="bill"></input>
-                
+                </div>
                     </div>
             </form>
 

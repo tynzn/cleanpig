@@ -1,8 +1,14 @@
-.cleanUpform{
+.heading{
 
-    padding:5% 2%;
-    background-color: #b54cfc;
-    border: 10px solid rgb(51, 182, 238);
-    margin: auto;
+   
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+.myform{
+    margin:auto;
+    padding: 5%;
+    border-width:5px;
+    border-style: solid;
+    border-color: black;
 }
